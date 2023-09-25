@@ -42,7 +42,7 @@ class Coupon(db.Model):
     def invalidate(self):
         self.is_valid = False
 
-class Post(db.Model):
+class Post(db.Model): 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=True)
     max_votes = db.Column(db.Integer)
